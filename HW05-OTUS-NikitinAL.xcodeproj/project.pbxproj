@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B5AC3032A16120E00A6422E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5AC3022A16120E00A6422E /* MainView.swift */; };
 		7BAB0BCF29FA757A000CE42C /* HW05_OTUS_NikitinALApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB0BCE29FA757A000CE42C /* HW05_OTUS_NikitinALApp.swift */; };
-		7BAB0BD129FA757A000CE42C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB0BD029FA757A000CE42C /* MainView.swift */; };
 		7BAB0BD329FA757B000CE42C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB0BD229FA757B000CE42C /* Assets.xcassets */; };
 		7BAB0BD629FA757B000CE42C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB0BD529FA757B000CE42C /* Preview Assets.xcassets */; };
 		7BAB0BDD29FA7584000CE42C /* SuffixSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB0BDC29FA7584000CE42C /* SuffixSequence.swift */; };
@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B5AC3022A16120E00A6422E /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7BAB0BCB29FA757A000CE42C /* HW05-OTUS-NikitinAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW05-OTUS-NikitinAL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAB0BCE29FA757A000CE42C /* HW05_OTUS_NikitinALApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW05_OTUS_NikitinALApp.swift; sourceTree = "<group>"; };
-		7BAB0BD029FA757A000CE42C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7BAB0BD229FA757B000CE42C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BAB0BD529FA757B000CE42C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7BAB0BDC29FA7584000CE42C /* SuffixSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuffixSequence.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		7BAB0BDF29FA75A8000CE42C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7BAB0BD029FA757A000CE42C /* MainView.swift */,
+				7B5AC3022A16120E00A6422E /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,8 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BAB0BD129FA757A000CE42C /* MainView.swift in Sources */,
 				7BAB0BDD29FA7584000CE42C /* SuffixSequence.swift in Sources */,
+				7B5AC3032A16120E00A6422E /* MainView.swift in Sources */,
 				7BAB0BE529FA77DE000CE42C /* ViewModel.swift in Sources */,
 				7BAB0BCF29FA757A000CE42C /* HW05_OTUS_NikitinALApp.swift in Sources */,
 			);

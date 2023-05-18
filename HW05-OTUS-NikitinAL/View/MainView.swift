@@ -36,6 +36,8 @@ struct MainView: View {
                     FirstView()
                 case .top:
                     SecondView()
+                case .execution:
+                    ThirdView()
             }
         }
     }
@@ -93,9 +95,41 @@ struct SecondView: View {
     }
 }
 
+struct ThirdView: View {
+    
+    @EnvironmentObject var vm: ViewModel
+    
+    var body: some View {
+        VStack {
+            List(0..<vm.topResultOfSearch.count, id:\.self) { index in
+                HStack{
+                    Text(vm.topResultOfSearch[index].key)
+                        .lineLimit(3)
+                        .truncationMode(.middle)
+                    Spacer()
+                    Text("\(vm.topResultOfSearch[index].value)")
+                        
+                }
+
+                .listRowBackground(getColor(for: index, maxIndex: vm.topResultOfSearch.count - 1))
+               
+            }
+            .listStyle(.plain)
+        }
+        
+    }
+    
+    func getColor(for index: Int, maxIndex: Int) -> Color {
+        let red = Double(index) / Double(maxIndex)
+        let green = 1.0 - red
+        return Color(red: red, green: green, blue: 0.0)
+    }
+}
+
 enum SelectForPicker : String, Identifiable, CaseIterable{
     case all = "All suffix"
     case top = "Top 3 latter suffix"
+    case execution = "Time of execution"
     
     var id: SelectForPicker { self }
 }
